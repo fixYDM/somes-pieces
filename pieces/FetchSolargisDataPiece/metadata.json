@@ -1,0 +1,24 @@
+{
+  "name": "FetchSolargisData",
+  "description": "Downloads Solargis CSV from S3 or URL",
+  "icon": "download",
+  "category": "Data Ingestion",
+  "parameters": [
+    {
+      "name": "s3_path",
+      "type": "string",
+      "description": "S3 path to Solargis data (e.g., s3://bucket/data.csv)",
+      "required": true
+    },
+    {
+      "name": "output_path",
+      "type": "string",
+      "description": "Local path to save raw CSV",
+      "required": true,
+      "default": "/mnt/artifacts/raw_solargis.csv"
+    }
+  ],
+  "dependencies": [
+    "Dockerfile_solar"
+  ]
+}

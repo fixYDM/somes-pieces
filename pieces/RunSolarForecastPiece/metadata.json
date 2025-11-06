@@ -1,0 +1,35 @@
+{
+  "name": "RunSolarForecast",
+  "description": "Generates next-day solar forecast using trained model",
+  "icon": "forecast",
+  "category": "Forecasting",
+  "parameters": [
+    {
+      "name": "model_path",
+      "type": "string",
+      "description": "Path to trained model",
+      "required": true
+    },
+    {
+      "name": "features_csv",
+      "type": "string",
+      "description": "Path to weather forecast features CSV",
+      "required": true
+    },
+    {
+      "name": "output_csv",
+      "type": "string",
+      "description": "Path to save forecast CSV",
+      "required": true
+    },
+    {
+      "name": "output_plot",
+      "type": "string",
+      "description": "Path to save forecast plot",
+      "required": true
+    }
+  ],
+  "dependencies": [
+    "Dockerfile_solar"
+  ]
+}

@@ -1,0 +1,12 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY dependencies/requirements_solar.txt .
+RUN pip install --no-cache-dir -r requirements_solar.txt
+
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
+ENV PYTHONPATH=/app
+
+CMD ["python"]

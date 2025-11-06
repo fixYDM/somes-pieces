@@ -1,0 +1,29 @@
+{
+  "name": "TrainXGBoost",
+  "description": "Trains XGBoost model on processed Solargis data",
+  "icon": "model",
+  "category": "Modeling",
+  "parameters": [
+    {
+      "name": "data_path",
+      "type": "string",
+      "description": "Path to processed CSV",
+      "required": true
+    },
+    {
+      "name": "model_out",
+      "type": "string",
+      "description": "Path to save model",
+      "required": true
+    },
+    {
+      "name": "log_out",
+      "type": "string",
+      "description": "Training log path",
+      "required": true
+    }
+  ],
+  "dependencies": [
+    "Dockerfile_solar"
+  ]
+}

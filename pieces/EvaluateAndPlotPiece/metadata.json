@@ -1,0 +1,35 @@
+{
+  "name": "EvaluateAndPlot",
+  "description": "Evaluates model performance and generates plots",
+  "icon": "chart",
+  "category": "Model Evaluation",
+  "parameters": [
+    {
+      "name": "data_path",
+      "type": "string",
+      "description": "Path to processed data CSV",
+      "required": true
+    },
+    {
+      "name": "model_path",
+      "type": "string",
+      "description": "Path to trained model",
+      "required": true
+    },
+    {
+      "name": "metrics_out",
+      "type": "string",
+      "description": "Path to save metrics JSON",
+      "required": true
+    },
+    {
+      "name": "plot_out",
+      "type": "string",
+      "description": "Path to save comparison plot",
+      "required": true
+    }
+  ],
+  "dependencies": [
+    "Dockerfile_solar"
+  ]
+}

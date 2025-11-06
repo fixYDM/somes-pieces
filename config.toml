@@ -1,0 +1,5 @@
+[repository]
+REGISTRY_NAME = "fixydm"
+REPOSITORY_NAME = "somes-pieces"
+REPOSITORY_LABEL = "SoMES - Microgrid Energy Scheduler"
+VERSION = "0.1.0"

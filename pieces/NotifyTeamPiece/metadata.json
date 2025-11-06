@@ -1,0 +1,23 @@
+{
+  "name": "NotifyTeam",
+  "description": "Sends email/slack notification with model metrics",
+  "icon": "notification",
+  "category": "Notifications",
+  "parameters": [
+    {
+      "name": "metrics_path",
+      "type": "string",
+      "description": "Path to model metrics JSON",
+      "required": true
+    },
+    {
+      "name": "webhook_url",
+      "type": "string",
+      "description": "Slack webhook URL (optional)",
+      "required": false
+    }
+  ],
+  "dependencies": [
+    "Dockerfile_solar"
+  ]
+}

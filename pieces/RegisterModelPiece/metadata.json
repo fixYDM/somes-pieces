@@ -1,0 +1,35 @@
+{
+  "name": "RegisterModel",
+  "description": "Registers trained model in Domino Model Registry",
+  "icon": "database",
+  "category": "Model Management",
+  "parameters": [
+    {
+      "name": "model_path",
+      "type": "string",
+      "description": "Path to trained model file",
+      "required": true
+    },
+    {
+      "name": "metrics_path",
+      "type": "string",
+      "description": "Path to model metrics JSON",
+      "required": true
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "Model name in registry",
+      "required": true
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "description": "Model description",
+      "required": false
+    }
+  ],
+  "dependencies": [
+    "Dockerfile_solar"
+  ]
+}
