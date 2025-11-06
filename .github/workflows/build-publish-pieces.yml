@@ -1,3 +1,5 @@
+# .github/workflows/build-publish-pieces.yml
+
 name: Build and Publish Domino Pieces
 
 on:
@@ -20,7 +22,7 @@ jobs:
           python-version: '3.9'
 
       - name: Install Domino CLI
-        run: pip install domino-deploy
+        run: pip install domino
 
       - name: Authenticate with GitHub Container Registry
         uses: docker/login-action@v3
