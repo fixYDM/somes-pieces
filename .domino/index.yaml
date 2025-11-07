@@ -1,0 +1,35 @@
+pieces:
+  - name: FetchSolargisDataPiece
+    path: pieces/FetchSolargisDataPiece/piece.py
+    description: Downloads Solargis data
+
+  - name: PreprocessSolargisPiece
+    path: pieces/PreprocessSolargisPiece/piece.py
+    description: Cleans & feature engineers
+
+  - name: TrainXGBoostPiece
+    path: pieces/TrainXGBoostPiece/piece.py
+    description: Trains XGBoost model
+
+  - name: RunSolarForecastPiece
+    path: pieces/RunSolarForecastPiece/piece.py
+    description: Generates daily forecasts
+
+  - name: EvaluateAndPlotPiece
+    path: pieces/EvaluateAndPlotPiece/piece.py
+    description: Validates & visualizes
+
+  - name: RegisterModelPiece
+    path: pieces/RegisterModelPiece/piece.py
+    description: Versions model in Domino
+
+  - name: NotifyTeamPiece
+    path: pieces/NotifyTeamPiece/piece.py
+    description: Sends alerts
+
+dependencies:
+  - pandas
+  - numpy
+  - xgboost
+  - matplotlib
+  - requests
